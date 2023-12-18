@@ -1,6 +1,7 @@
 .checkout__product-container {
   width: 100vw;
   padding-bottom: 80px;
+  min-height: 70vh;
 }
 
 .checkout__main-title {

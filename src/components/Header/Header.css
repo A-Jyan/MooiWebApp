@@ -4,37 +4,48 @@
   height: 2vh;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  padding: 2rem;
 }
 
 .header__logo {
   width: 100px;
-
 }
 
 .header__links-container {
   display: flex;
   flex-direction: row;
-  min-width: 350px;
   justify-content: space-between;
+  align-items: center;
 }
 
-li {
-  list-style: none;
+.header__link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header__link {
+  align-self: center;
+  margin-top: 4px;
+}
+
+.header__cart-link {
+  position: relative;
 }
 
 a {
   text-decoration: none;
   color: white;
   font-weight: 600;
-  font-size:1.3rem;
+  font-size: 1.3rem;
 }
 
 a:hover {
   color: darkgray;
   transition: all 0.2s ease-in-out;
 }
-
 
 .header__cart {
   position: relative;
@@ -44,7 +55,7 @@ a:hover {
 .header__cart box-icon {
   width: 45px;
   height: 45px;
-  color:white;
+  color: white;
 }
 .header__cart span {
   position: absolute;
@@ -66,13 +77,13 @@ a:hover {
 .header__cart-count {
   position: absolute;
   top: -5px;
-  right: -5px;
-  background-color: #D9CAA5;
+  right: -15px;
+  background-color: #d9caa5;
   width: 23px;
   height: 23px;
   font-size: 1rem;
   text-align: center;
   border-radius: 50%;
-  padding: 2px;
+  padding: 1px;
   color: black;
 }

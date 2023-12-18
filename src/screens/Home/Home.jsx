@@ -2,19 +2,21 @@ import React from "react";
 import "./Home.css";
 
 
+const gallery = [
+  require('../../assets/images/gallery/deluxe.jpeg'),
+  require('../../assets/images/gallery/desayuno.jpeg'),
+  require('../../assets/images/gallery/dinner.jpeg'),
+  require('../../assets/images/gallery/gym.jpeg'),
+  require('../../assets/images/gallery/living.jpg'),
+  require('../../assets/images/gallery/ocean.jpg'),
+  require('../../assets/images/gallery/pool.jpeg'),
+  require('../../assets/images/gallery/premium-room.jpeg'),
+  require('../../assets/images/gallery/spa.jpeg'),
+]
+
+
 const Home = () => {
 
-  const gallery = [
-    require('../../assets/images/gallery/deluxe.jpeg'),
-    require('../../assets/images/gallery/desayuno.jpeg'),
-    require('../../assets/images/gallery/dinner.jpeg'),
-    require('../../assets/images/gallery/gym.jpeg'),
-    require('../../assets/images/gallery/living.jpg'),
-    require('../../assets/images/gallery/ocean.jpg'),
-    require('../../assets/images/gallery/pool.jpeg'),
-    require('../../assets/images/gallery/premium-room.jpeg'),
-    require('../../assets/images/gallery/spa.jpeg'),
-  ]
   return (
     <div className="home__container">
       <img
@@ -23,9 +25,9 @@ const Home = () => {
         title="lobby-banner"
         className="home-banner"
       />
-      <div style={{ padding: '4rem' }}>
+      <div className="home__description-container">
         <h2 style={{ margin: '0 0 2rem 0', textAlign: 'center' }}>MOOI</h2>
-        <p style={{ margin: '0 0 10rem 0' }}>
+        <p style={{ margin: '0 0 4rem 0' }}>
           Bienvenido al Hotel Mooi, un magnífico resort de cinco estrellas situado en una exuberante isla caribeña. Como su nombre lo indica, "Mooi", que significa "hermoso" en holandés, encarna la esencia de este paraíso, donde la belleza, la elegancia y la comodidad se combinan para ofrecer una experiencia inolvidable.
           <br />
           <br />

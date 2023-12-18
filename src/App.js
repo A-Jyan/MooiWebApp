@@ -4,10 +4,11 @@ import { Header } from "./components/Header/Header";
 import { Home } from "./screens/Home/Home";
 import { Products } from "./screens/Products/Products";
 import { ProductDetail } from "./screens/ProductDetail/ProductDetail";
-import { DataContext, DataProvider } from "./context/DataProvider";
+import { DataContext } from "./context/DataProvider";
 import { Cart } from "./screens/Cart/Cart";
 import { Checkout } from "./screens/Checkout/Checkout";
 import { useContext } from "react";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   const { cart } = useContext(DataContext);
@@ -23,6 +24,7 @@ function App() {
           <Route path="/checkout" exact element={<Checkout />} />
         )}
       </Routes>
+      <Footer />
     </Router>
   );
 }

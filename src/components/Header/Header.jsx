@@ -12,25 +12,15 @@ export const Header = () => {
       <Link to="/">
         <img src={Logo} alt="mooi" className="header__logo" />
       </Link>
-      <ul className="header__links-container">
-        <li>
-          <Link to="/">Inicio</Link>
-        </li>
-        <li>
-          <Link to="/productos">Habitaciones</Link>
-        </li>
-        {/* <li>
-          <Link to="/productos">Contacto</Link>
-        </li> */}
-      </ul>
-      <Link to="/carrito">
-        <div className="header__cart">
-          <box-icon name="cart" color={'white'} />
+      <div className="header__link-container">
+        <Link to="/productos">Habitaciones</Link>
+        <Link to="/carrito" className="header__cart-link">
+          <box-icon name="cart" color={'white'} size="2.5rem" />
           {cart.length > 0 && (
             <p className="header__cart-count">{cart.length}</p>
           )}
-        </div>
-      </Link>
+        </Link>
+      </div>
     </header>
   );
 };

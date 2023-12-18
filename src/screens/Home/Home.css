@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  .home__description-container {
+    width: 70%;
+  }
+}
+
 .home__container {
   width: 100%;
   display: flex;
@@ -13,6 +19,13 @@
 .home-banner {
   height: 90vh;
   object-fit: cover;
+}
+
+.home__description-container {
+  width: 90%;
+  align-self: center;
+  padding-top: 2rem;
+  text-align: center;
 }
 
 .gallery {

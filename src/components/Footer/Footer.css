@@ -1,0 +1,12 @@
+.footer__container {
+  background-color: black;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__link {
+  color: white;
+  padding: 2rem;
+  font-size: 1rem;
+}
