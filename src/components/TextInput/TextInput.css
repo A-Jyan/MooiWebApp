@@ -1,0 +1,15 @@
+.textInput__input-group {
+  display: flex;
+  flex-direction: column;
+}
+.textInput__input-label {
+  font-size: 18;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.textInput__input-text {
+  font-size: 18;
+  padding: 10px;
+  width: 600px;
+  border-radius: 5px;
+}

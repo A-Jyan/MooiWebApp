@@ -1,0 +1,25 @@
+.products__product-container {
+  padding-bottom: 80px;
+}
+
+.products__container{
+  margin-top: 3rem;
+}
+
+
+
+.products__main-title {
+  padding: 40px;
+  font-weight: 900;
+}
+
+.products__products-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding:20px;
+  justify-content: center;
+  padding-bottom: 80px;
+}
