@@ -99,6 +99,7 @@ const Checkout = () => {
           <Button
             text="Finalizar compra"
             type="submit"
+            className={"submit"}
             onClick={handleSubmit}
             disabled={
               !firstName ||

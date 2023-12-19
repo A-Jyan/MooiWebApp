@@ -1,3 +1,9 @@
+@media (max-width: 678px) {
+  .textInput__input-text {
+    width: 100% !important;
+  }
+}
+
 .textInput__input-group {
   display: flex;
   flex-direction: column;
