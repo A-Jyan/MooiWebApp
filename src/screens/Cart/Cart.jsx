@@ -12,16 +12,14 @@ const CartScreen = () => {
   return (
     <div className="cart__container">
       <h1 className="cart__title">Tus habitaciones:</h1>
-      <div>
-        {cart.map((product) => (
-          <CartItem key={product.id} id={product.id} product={product} />
-        ))}
-        {cart.length === 0 && (
-          <p className="cart__empty-cart-message">
-            Aún no hay ninguna habitacion seleccionada
-          </p>
-        )}
-      </div>
+      {cart.map((product) => (
+        <CartItem key={product.id} id={product.id} product={product} />
+      ))}
+      {cart.length === 0 && (
+        <p className="cart__empty-cart-message">
+          Aún no hay ninguna habitacion seleccionada
+        </p>
+      )}
       {cart.length > 0 && (
         <div className="cart__submit-container">
           <h3 className="cart__submit-total">Total: ${amount}</h3>

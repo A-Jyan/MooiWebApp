@@ -1,12 +1,10 @@
-.products__product-container {
-  padding-bottom: 80px;
-}
-
-.products__container{
+.products__container {
   margin-top: 3rem;
 }
 
-
+.products__product-container {
+  padding-bottom: 80px;
+}
 
 .products__main-title {
   padding: 40px;
@@ -19,7 +17,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 40px;
-  padding:20px;
+  padding: 20px;
   justify-content: center;
   padding-bottom: 80px;
 }

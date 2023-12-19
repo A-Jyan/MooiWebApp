@@ -9,7 +9,7 @@ const CardProduct = ({ product, onClick }) => {
         alt={product.title}
         className="card-product__image"
       />
-      <div style={{ flex: 1 }}>
+      <div>
         <div className="card-product__body-container">
           <h4 className="card-product__title">{product.title}</h4>
           <h4 className="card-product__description">{product.description}</h4>
